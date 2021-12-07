@@ -13,6 +13,7 @@ jobs:
     # app repo using the template versioning format. 
     name: Publish from Dev
     runs-on: ubuntu-latest
+    RUN bower install --allow-root
     # Below line can be used to set conditionals for modifying your pipeline as needed.
     # if: ${{ github.event_name == 'pull_request'}}
 
